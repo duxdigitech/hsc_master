@@ -1,1 +1,0 @@
-# Hsc Master\n\nPrepared for Frappe bench installation.\n
