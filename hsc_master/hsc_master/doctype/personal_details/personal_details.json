@@ -1,0 +1,250 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:PD-{##}",
+ "creation": "2025-09-06 11:27:45.733141",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "display_name",
+  "cluster_name",
+  "village_name",
+  "contractor_name",
+  "staff_name",
+  "customer_name",
+  "father_name",
+  "mobile_number",
+  "address",
+  "aadhar_number",
+  "customer_survey_number",
+  "pipe_number",
+  "column_break_xpqo",
+  "from_junction",
+  "to_junction",
+  "types_of_connection",
+  "latitude",
+  "longitude",
+  "aadhar_card_photo",
+  "customer_photo",
+  "samagra_id_photo",
+  "connection_status",
+  "section_break_vced",
+  "all_details"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number",
+   "length": 10,
+   "options": "Phone"
+  },
+  {
+   "fieldname": "types_of_connection",
+   "fieldtype": "Select",
+   "label": "Types of Connection",
+   "options": "Site to Site\nOther Site"
+  },
+  {
+   "fieldname": "from_junction",
+   "fieldtype": "Int",
+   "label": "From Junction",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "to_junction",
+   "fieldtype": "Int",
+   "label": "To Junction",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "customer_survey_number",
+   "fieldtype": "Int",
+   "label": "Customer Survey Number",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "aadhar_number",
+   "fieldtype": "Data",
+   "label": "Aadhar Number",
+   "length": 14,
+   "non_negative": 1,
+   "options": "^\\\\d{12}$"
+  },
+  {
+   "fieldname": "pipe_number",
+   "fieldtype": "Data",
+   "label": "Pipe Number",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "aadhar_card_photo",
+   "fieldtype": "Attach",
+   "label": "Aadhar Card Photo"
+  },
+  {
+   "fieldname": "samagra_id_photo",
+   "fieldtype": "Attach",
+   "label": "Samagra Id Photo"
+  },
+  {
+   "fieldname": "customer_photo",
+   "fieldtype": "Attach",
+   "label": "Customer Photo"
+  },
+  {
+   "fieldname": "section_break_vced",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "display_name",
+   "fieldtype": "Link",
+   "label": "Block/Zone",
+   "options": "Block at Zone",
+   "reqd": 1
+  },
+  {
+   "columns": 6,
+   "fieldname": "all_details",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "connection_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Connection Status",
+   "options": "New\nHSC\nCompleted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cluster_name",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Cluster Name",
+   "options": "Cluster Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "village_name",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Village Name",
+   "options": "Village Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contractor_name",
+   "fieldtype": "Link",
+   "label": "Contractor Name",
+   "options": "Contractor At Cluster",
+   "reqd": 1
+  },
+  {
+   "fieldname": "staff_name",
+   "fieldtype": "Link",
+   "label": "Staff Name",
+   "options": "Staff At Cluster",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xpqo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "Father Name",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-10 17:10:21.456448",
+ "modified_by": "shreyyjainn405@gmail.com",
+ "module": "Hsc Master",
+ "name": "Personal Details",
+ "naming_rule": "Expression",
+ "owner": "shreyyjainn405@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Site Supervisor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Site Hsc Master",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "protect_attached_files": 1,
+ "row_format": "Dynamic",
+ "search_fields": "date,mobile_number",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "customer_name",
+ "translated_doctype": 1
+}

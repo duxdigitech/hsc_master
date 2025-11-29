@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:TC - {##}",
+ "creation": "2025-09-08 09:14:15.441635",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ng5m",
+  "all_items",
+  "display_name",
+  "cluster_name",
+  "village_name",
+  "section_break_xrlw",
+  "tap_connection_date",
+  "tap_connection",
+  "tap_connection_photo",
+  "connection_status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ng5m",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tap Connection",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_xrlw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Yes",
+   "fieldname": "tap_connection",
+   "fieldtype": "Select",
+   "label": "Tap Connection",
+   "options": "Yes",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "tap_connection_photo",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Tap Connection Photo"
+  },
+  {
+   "columns": 10,
+   "fieldname": "all_items",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "HSC Details",
+   "options": "HSC Details",
+   "reqd": 1
+  },
+  {
+   "default": "Tap Connected",
+   "fieldname": "connection_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Connection Status",
+   "options": "Tap Connected",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "tap_connection_date",
+   "fieldtype": "Date",
+   "label": "Tap Connection Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "all_items.display_name",
+   "fieldname": "display_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_standard_filter": 1,
+   "label": "Block/Zone",
+   "options": "Block at Zone",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "all_items.cluster_name",
+   "fieldname": "cluster_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Cluster name",
+   "options": "Cluster Details",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "all_items.village_name",
+   "fieldname": "village_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Village name",
+   "options": "Village Details",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-07 09:57:42.034015",
+ "modified_by": "shreyyjainn405@gmail.com",
+ "module": "Hsc Master",
+ "name": "Tap Connection",
+ "naming_rule": "Expression",
+ "owner": "shreyyjainn405@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "tap_connection_date",
+ "translated_doctype": 1
+}

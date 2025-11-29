@@ -1,0 +1,6 @@
+include README.md
+recursive-include hsc_master *.py *.json *.txt *.html *.css *.js *.png *.svg
+recursive-include public *
+recursive-include www *
+recursive-include templates *
+recursive-include hsc_master/templates *

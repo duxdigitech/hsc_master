@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:hsc_contractor_name",
+ "creation": "2025-10-04 15:05:23.401396",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "firm_name",
+  "hsc_contractor_name",
+  "work_order_no",
+  "contact_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "firm_name",
+   "fieldtype": "Data",
+   "label": "Firm Name"
+  },
+  {
+   "fieldname": "hsc_contractor_name",
+   "fieldtype": "Data",
+   "label": "HSC Contractor Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "work_order_no",
+   "fieldtype": "Data",
+   "label": "Work Order No."
+  },
+  {
+   "fieldname": "contact_no",
+   "fieldtype": "Data",
+   "label": "Contact No.",
+   "length": 10,
+   "options": "Phone"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-07 08:55:17.876738",
+ "modified_by": "Administrator",
+ "module": "Hsc Master",
+ "name": "HSC Contractor Details",
+ "naming_rule": "By fieldname",
+ "owner": "abhijeetji098@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "hsc_contractor_name"
+}
