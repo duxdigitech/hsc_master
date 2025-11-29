@@ -1,0 +1,8 @@
+[
+  {"fieldname":"from_date","label":"Date From","fieldtype":"Date"},
+  {"fieldname":"to_date","label":"Date To","fieldtype":"Date"},
+  {"fieldname":"block_at_zone","label":"Block","fieldtype":"Link","options":"Block at Zone"},
+  {"fieldname":"cluster_name","label":"Cluster","fieldtype":"Link","options":"Cluster Details"},
+  {"fieldname":"village_id","label":"Village","fieldtype":"Link","options":"Village Details"},
+  {"fieldname":"contractor_id","label":"Contractor","fieldtype":"Link","options":"Contractor At Cluster"}
+]
